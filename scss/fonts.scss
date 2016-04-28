@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Arvo Regular';
+    src: url('../fonts/Arvo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Arvo Italic';
+    src: url('../fonts/Arvo-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Arvo Bold';
+    src: url('../fonts/Arvo-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Arvo BoldItalic';
+    src: url('../fonts/Arvo-BoldItalic.ttf') format('truetype');
+    font-weight: 200;
+}
+
+$font-arvo: 'Arvo Regular', Arial, monospace;
+$font-arvo-b: 'Arvo Bold', Arial, monospace;
+$font-arvo-i: 'Arvo Italic', Arial, monospace;
+$font-arvo-bi: 'Arvo BoldItalic', Arial, monospace;

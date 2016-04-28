@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'Arvo Regular';
+  src: url("../fonts/Arvo-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Arvo Italic';
+  src: url("../fonts/Arvo-Italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Arvo Bold';
+  src: url("../fonts/Arvo-Bold.ttf") format("truetype");
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Arvo BoldItalic';
+  src: url("../fonts/Arvo-BoldItalic.ttf") format("truetype");
+  font-weight: 200; }
+
+::-moz-selection {
+  color: white;
+  background-color: #e55959; }
+
+::selection {
+  color: white;
+  background-color: #e55959; }
+
+body {
+  padding-top: 50px;
+  padding-bottom: 0;
+  text-rendering: optimizeLegibility; }
+
+section {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.link {
+  color: #e55959;
+  font-family: "Arvo Bold", Arial, monospace; }
+
+.container {
+  width: 100%;
+  max-width: 960px; }
+
+/*  NAV BAR  */
+#main-nav {
+  font-family: "Arvo Regular", Arial, monospace;
+  font-size: 14px; }
+  #main-nav .navbar-nav.navbar-right {
+    display: none; }
+    #main-nav .navbar-nav.navbar-right li {
+      margin-right: 10px; }
+      #main-nav .navbar-nav.navbar-right li a {
+        transition: all .3s; }
+      #main-nav .navbar-nav.navbar-right li:last-of-type button {
+        margin-top: 8px;
+        margin-right: 0;
+        font-size: 14px;
+        transition: all .3s; }
+
+/*  JUMBOTRON  */
+.jumbotron {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-image.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ddd; }
+  .jumbotron h1 {
+    margin-bottom: 35px;
+    font-family: "Arvo Regular", Arial, monospace; }
+  .jumbotron p:first-of-type {
+    margin-bottom: 30px; }
+  .jumbotron p:last-of-type a {
+    color: white;
+    background-color: #ef4b4b;
+    border: none;
+    transition: all .3s; }
+    .jumbotron p:last-of-type a:hover {
+      background-color: #ed3838; }
+
+/* WHO WE ARE */
+#who-we-are {
+  text-align: center; }
+  #who-we-are #emblem {
+    margin-top: 15px; }
+  #who-we-are h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #e55959;
+    font-family: "Arvo Bold", Arial, monospace; }
+    #who-we-are h2:after {
+      content: "";
+      display: block;
+      margin: 15px auto;
+      width: 100px;
+      height: 2px;
+      background-color: #e55959; }
+  #who-we-are p {
+    font-family: "Arvo Regular", Arial, monospace;
+    font-size: 18px; }
+
+/*  FEATURES  */
+#features {
+  background-color: #fafafa; }
+  #features > h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #e55959;
+    font-family: "Arvo Bold", Arial, monospace;
+    margin-bottom: 40px; }
+    #features > h2:after {
+      content: "";
+      display: block;
+      margin: 15px auto;
+      width: 100px;
+      height: 2px;
+      background-color: #e55959; }
+  #features h2 {
+    text-align: center; }
+  #features .container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  #features .icon-big {
+    display: block;
+    margin: 0 auto; }
+  #features .box {
+    width: 100%;
+    margin-bottom: 50px; }
+    #features .box p {
+      text-align: justify;
+      padding-left: 15px;
+      padding-right: 15px; }
+      #features .box p:last-of-type {
+        text-align: center; }
+        #features .box p:last-of-type a {
+          border: 1px solid #e55959;
+          color: #e55959;
+          transition: all 0.3s; }
+          #features .box p:last-of-type a:hover {
+            background-color: #e55959;
+            color: white; }
+
+/* FOOTER */
+#main-footer {
+  height: 140px;
+  padding-top: 70px;
+  padding-left: 5%;
+  background-color: #e55959;
+  font-family: "Arvo Regular", Arial, monospace;
+  padding-bottom: 20px; }
+  #main-footer p {
+    color: #f1f1f1;
+    margin-top: 10px; }
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 600px) {
+  #features .box {
+    width: 50%;
+    margin: 0 auto; } }
+
+@media screen and (min-width: 768px) {
+  #features .box {
+    width: 33.3333333%; }
+  #main-nav .navbar-nav.navbar-right {
+    display: block; } }

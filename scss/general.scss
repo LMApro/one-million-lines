@@ -1,0 +1,42 @@
+::selection {
+	color: white;
+	background-color: $color-red;
+}
+body {
+  padding-top: 50px;
+  padding-bottom: 0;
+	text-rendering: optimizeLegibility;
+}
+
+section {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+@mixin sectionHeading() {
+	text-align: center;
+	text-transform: uppercase;
+	color: $color-red;
+	font-family: $font-arvo-b;
+	&:after {
+		content: "";
+		display: block;
+		margin: 15px auto;
+		width: 100px;
+		height: 2px;
+		background-color: $color-red;
+	}
+
+}
+
+.link {
+	color: $color-red;
+	font-family: $font-arvo-b;
+}
+
+.container {
+	width: 100%;
+	max-width: 960px;
+}
+
+
