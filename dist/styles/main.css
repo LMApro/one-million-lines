@@ -42,18 +42,20 @@ section {
   max-width: 960px; }
 
 /*  NAV BAR  */
-nav#main-nav {
+#main-nav {
   font-family: "Arvo Regular", Arial, monospace;
   font-size: 14px; }
-  nav#main-nav li {
-    margin-right: 10px; }
-    nav#main-nav li a {
-      transition: all .3s; }
-    nav#main-nav li:last-of-type button {
-      margin-top: 8px;
-      margin-right: 0;
-      font-size: 14px;
-      transition: all .3s; }
+  #main-nav .navbar-nav.navbar-right {
+    display: none; }
+    #main-nav .navbar-nav.navbar-right li {
+      margin-right: 10px; }
+      #main-nav .navbar-nav.navbar-right li a {
+        transition: all .3s; }
+      #main-nav .navbar-nav.navbar-right li:last-of-type button {
+        margin-top: 8px;
+        margin-right: 0;
+        font-size: 14px;
+        transition: all .3s; }
 
 /*  JUMBOTRON  */
 .jumbotron {
@@ -74,26 +76,12 @@ nav#main-nav {
     transition: all .3s; }
     .jumbotron p:last-of-type a:hover {
       background-color: #ed3838; }
-  .jumbotron a {
-    text-decoration: none;
-    transition: all .3s; }
-    .jumbotron a:link, .jumbotron a:visited {
-      color: #eee; }
-    .jumbotron a:hover {
-      color: #e55959; }
 
 /* WHO WE ARE */
 #who-we-are {
   text-align: center; }
   #who-we-are #emblem {
     margin-top: 15px; }
-  #who-we-are a {
-    text-decoration: none;
-    transition: all .3s; }
-    #who-we-are a:link, #who-we-are a:visited {
-      color: #e55959; }
-    #who-we-are a:hover {
-      color: #e03a3a; }
   #who-we-are h2 {
     text-align: center;
     text-transform: uppercase;

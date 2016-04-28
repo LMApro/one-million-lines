@@ -3,23 +3,26 @@
 @import "general.scss";
 
 /*  NAV BAR  */
-nav#main-nav {
-	font-family: $font-arvo;
-	font-size: 14px;
-	li {
-      margin-right: 10px;
-      a {
-      	transition: all .3s;
-      }
-      &:last-of-type button {
-         margin-top: 8px;
-         margin-right: 0;
-         font-size: 14px;
-         transition: all .3s;
+
+#main-nav {
+   .navbar-nav.navbar-right {
+      display: none;
+      li {
+         margin-right: 10px;
+         a {
+         	transition: all .3s;
+         }
+         &:last-of-type button {
+            margin-top: 8px;
+            margin-right: 0;
+            font-size: 14px;
+            transition: all .3s;
+         }
       }
    }
+   font-family: $font-arvo;
+   font-size: 14px;
 }
-
 
 
 /*  JUMBOTRON  */
@@ -49,17 +52,6 @@ nav#main-nav {
          }
       }
    }
-
-   a {
-   	text-decoration: none;
-   	transition: all .3s;
-   	&:link, &:visited {
-   		color: #eee;
-   	}
-   	&:hover {
-			color: $color-red;
-   	}
-   }
 }
 
 
@@ -70,17 +62,6 @@ nav#main-nav {
    #emblem {
       margin-top: 15px;
    }
-   a {
-   	text-decoration: none;
-   	transition: all .3s;
-   	&:link, &:visited {
-   		color: $color-red;
-   	}
-   	&:hover {
-			color: darken($color-red, 7%);
-   	}
-   }
-
    h2 {
       @include sectionHeading();
    }
